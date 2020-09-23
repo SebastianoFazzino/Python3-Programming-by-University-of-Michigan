@@ -52,7 +52,7 @@ print(animals.get('dog'))
 # if we use .get with a key that is not in the dictionary, the output will be 'None'
 print(animals.get('shark'))
 
-# if wa pass two values to the get method, we'll create a new key, if it's not in the dictionary already
+# if we pass two values to the get method, we'll create a new key, if it's not in the dictionary already
 print(animals.get('shark',10))
 
 
