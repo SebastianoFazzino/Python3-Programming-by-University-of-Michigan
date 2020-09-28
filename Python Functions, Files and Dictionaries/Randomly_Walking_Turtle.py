@@ -1,3 +1,5 @@
+#we'll use random to generate random values and the while loop so that the turtle will walk till random > 0.1 is False
+
 import random
 import turtle
 
@@ -23,9 +25,6 @@ while isInScreen(wn, t):
     t.forward(50)
 
 wn.exitonclick()
-
-
-
 
 
 
