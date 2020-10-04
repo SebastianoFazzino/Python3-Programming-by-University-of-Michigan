@@ -5,7 +5,8 @@ for I in nested1:
         print("    level 2: " + str(i))
         
         
- 
+print("--------------------------------------")
+
  
        
 #given the follow nested lists, let's say we want to retrieve every last name and save those values in the variable last
@@ -19,6 +20,7 @@ for last_names in info:
     print(last)
         
 
+print("--------------------------------------")
 
 
 #more examples:
@@ -33,4 +35,20 @@ for items in List:
             
 print(b_strings)
      
+
+print("--------------------------------------")
+
+#when we deal with different types of data structures, we need to use different approaches accordingly:
+
+nested1 = [1, 2, ['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
+for x in nested1:
+    print("level1:  ")
+    #in this case, if we try to directly iterate through the elements in the list, we'll get an error message;
+    #that's wh we need to use a different approach, using an 'if' statement
+    if type(x) is list:
+        for y in x:
+            print("     level2: {}".format(y))   
+            
+    else:
+        print(x)
         
