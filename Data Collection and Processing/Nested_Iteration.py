@@ -44,7 +44,7 @@ nested1 = [1, 2, ['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
 for x in nested1:
     print("level1:  ")
     #in this case, if we try to directly iterate through the elements in the list, we'll get an error message;
-    #that's wh we need to use a different approach, using an 'if' statement
+    #that's wh we need to use a different approach, using an 'if' statement to check the data types in the list
     if type(x) is list:
         for y in x:
             print("     level2: {}".format(y))   
