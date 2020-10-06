@@ -3,7 +3,7 @@
 
 import requests
 
-def get_rhymes(word):
+def get_synonyms(word):
     baseurl = "https://api.datamuse.com/words"
     params_diction = {} # Set up an empty dictionary for query parameters
     params_diction["rel_syn"] = word
@@ -15,5 +15,5 @@ def get_rhymes(word):
 
 
 
-print(get_rhymes("clever"))
+print(get_synonyms("clever"))
 
