@@ -5,7 +5,7 @@ import json
 
 # apply for a flickr authentication key at http://www.flickr.com/services/apps/create/apply/?
 # paste the key (not the secret) as the value of the variable flickr_key
-flickr_key = '6b47a277637cd2570d239b4ff8b1425a'
+flickr_key = 'INSERT YOUR FLICKR KEY HERE!!!'
 
 def get_flickr_data(tags_string):
     baseurl = "https://api.flickr.com/services/rest/"
