@@ -36,3 +36,23 @@ except Exception as e: #the error type has been assigned to the variable 'e'
     print(e) #so we can print the error message, in this case 'list index out of range'
 
 print("continuing")
+
+
+#we can handle different kind of errors in different way using except:
+    
+items = ['a', 'b']
+
+try:
+    var = r   
+    x = 21 / 0
+    third = items[2] 
+except ZeroDivisionError:
+    print("you can't divide by zero!")
+except IndexError:
+    print("Index out of range!")
+except NameError:
+    print("something else went wrong!")
+
+#in this case, since the first error that occurs is a name error,
+#only the third except condition will be executed, so the output will be
+#"something else went wrong!"
